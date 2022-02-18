@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+.mini_form {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    color: green;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.button {
+   color: green;
+   height: 2em;
+}
+
+.search:hover {
+    color: red;
+}
+
+.button:hover {
+    color: red;
+}
+
+::placeholder {
+    color: green;
+}

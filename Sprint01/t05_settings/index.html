@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Settings</h1>
+    <div class="main_form">
+        <form class="form">
+            <div class="grid">
+                <div class="grid_el">
+                    <label>Typeface</label>
+                    <br>
+                    <select class="select">
+                        <option>Acunim Pro</option>
+                        <option>Comic Sans</option>
+                        <option>Time New Roman</option>
+                    </select>
+                </div>
+                <div class="grid_el">
+                    <br>
+                    <br>
+                    <label>Dark UI</label>
+                    <label class="switch1">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="grid_el">
+                    <br>
+                    <label>Weight</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="weight" id="a" class="weight-option">
+                    <label for="a" class="weight-label">Regular</label>
+                    <input type="radio" name="weight" id="b" class="weight-option"/>
+                    <label for="b" class="weight-label">Bold</label>
+                </div>
+                <div class="grid_el">
+                    <p>Color</p>
+                    <div class="color-picker-block">
+                        <input class="checkbox" type="checkbox" name="blue" id="blue">
+                        <label class="color-pick" for="blue"></label>
+                        <input class="checkbox" type="checkbox" name="green" id="green" checked>
+                        <label class="color-pick" for="green"></label>
+                        <input class="checkbox" type="checkbox" name="pink" id="pink">
+                        <label class="color-pick" for="pink"></label>
+                        <input class="checkbox" type="checkbox" name="yellow" id="yellow">
+                        <label class="color-pick" for="yellow"></label>
+                        <input class="checkbox" type="checkbox" name="orange" id="orange" checked>
+                        <label class="color-pick" for="orange"></label>
+                    </div>
+                </div>
+                <div class="grid_el">
+                    <p>Size</p>
+                    <input class="font-size" type="range" name="font-size" min="0" max="10" step="1" value="4">
+                </div>
+            </div>
+        </form>
+        <aside class="side-menu">
+            <img class="img" src="assets/images/artistic-brush.png" alt="Artistic brush">
+            <img class="img" src="assets/images/user-icon.png" alt="User icon">
+            <img class="img" src="assets/images/sms-speech-bubble.png" alt="SMS speech bubble">
+            <img class="img" src="assets/images/computer-screen.png" alt="Computer screen">
+        </aside>
+    </div>
+</body>
+</html>
+
+

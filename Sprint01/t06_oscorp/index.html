@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bookshelf</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav class="flex">
+            <h1 class="store-name nav-item"><a href="index.html" class="invisible-link">Bookshelf</a></h1>
+            <p class="nav-item"><a href="#">ABOUT</a></p>
+            <p class="nav-item"><a href="#">SERVICE</a></p>
+            <p class="nav-item"><a href="#">CONTACT</a></p>
+            <input type="text" class="nav-item search" placeholder="Search">
+            <p class="nav-item phone">Phone Support:<br><a href="tel:+380669486232" class="phone-number">+380 66 948 62 32</a></p>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <div class="breadcrumbs">
+            <span class="breadcrumb"><a href="index.html">Catalog</a></span>
+        </div>
+        <h1>Catalog</h1>
+        <form class="active-filters">
+            <input type="checkbox" id="Fiction" checked="checked">
+            <label for="Fiction" name="filter">Fiction</label>
+            <input type="checkbox" id="Light-fiction" checked="checked">
+            <label for="Light-fiction" name="filter">Light fiction</label>
+            <input type="checkbox" id="Non—fiction" checked="checked">
+            <label for="Non—fiction" name="filter">Non—fiction</label>
+        </form>
+        <div class="filters-and-products">
+            <form class="filters">
+                <fieldset class="brand">
+                    <legend>Genre</legend>
+                    <input type="checkbox" id="a" checked="checked">
+                    <label for="a" name="brand">Fiction</label>
+                    <br>
+                    <input type="checkbox" id="b" checked="checked">
+                    <label for="b" name="brand">Light fiction</label>
+                    <br>
+                    <input type="checkbox" id="c" checked="checked">
+                    <label for="c" name="brand">Non—fiction</label>
+                </fieldset>
+                <fieldset class="max-price">
+                    <legend>Price</legend>
+                    <input type="range" id="max-price" min="1" max="12000" step="10" value="4000">
+                    <p class="range-min-max">
+                        <span class="min">1 ₴</span>
+                        <span class="max">12000 ₴</span>
+                    </p>
+                </fieldset>
+            </form>
+            <div class="products">
+                <div class="product">
+                    <a href="card.html" class="invisible-link">
+                        <img class="product-image" src="assets/images/SorcerersStone_2017.png " alt="img">
+                        <h1 class="product-name">Harry Potter and the Philosopher's Stone</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span class="price">999</span> ₴</p>
+                        <p class="stock available">Available</p>
+                        <p class="buy"><a href="card.html">Buy</a></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#" class="invisible-link">
+                        <img class="product-image" src="assets/images/842-8425773_harry-potter-books-goblet-of-fire.png" alt="img">
+                        <h1 class="product-name">Harry Potter and the Goblet of Fire</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span class="price">999</span> ₴</p>
+                        <p class="stock unavailable">Unavailable</p>
+                        <p class="buy"><a href="#">Buy</a></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#" class="invisible-link">
+                        <img class="product-image" src="assets/images/OrderOfThePhoenix_2017.png" alt="img">
+                        <h1 class="product-name">Harry Potter and the Order of the Phoenix</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span class="price">999</span> ₴</p>
+                        <p class="stock unavailable">Unavailable</p>
+                        <p class="buy"><a href="#">Buy</a></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#" class="invisible-link">
+                        <img class="product-image" src="assets/images/PrisonerOfAzkaban_2017.png" alt="img">
+                        <h1 class="product-name">Harry Potter and the Prisoner of Azkaban</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span class="price">999</span> ₴</p>
+                        <p class="stock available">Available</p>
+                        <p class="buy"><a href="#">Buy</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+

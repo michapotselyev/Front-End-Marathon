@@ -1,0 +1,17 @@
+.TANOOOOOS {
+    width: 15em;
+}
+
+th img {
+    width: 8em;
+    height: 8em;
+}
+
+.TANOOOOOS:hover ~ .table .odd th:nth-child(odd) {
+    visibility: hidden;
+}
+
+.TANOOOOOS:hover ~ .table .even th:nth-child(even) {
+    visibility: hidden;
+}
+

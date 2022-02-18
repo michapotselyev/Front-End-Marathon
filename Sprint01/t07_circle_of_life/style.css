@@ -1,0 +1,42 @@
+div {
+    position: relative;
+    height: 2.4em;
+    margin: 1.5em 1em;
+    padding: .2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+div:before {
+    content: attr(a);
+    display: inline-block;
+    position: absolute;
+    left: .2em;
+    min-width: 2em;
+    height: 2em;
+    padding: .2em;
+    background: green;
+    border-radius: 200px;
+    animation: timing 50s infinite;
+    line-height: 2em;
+    white-space: nowrap;
+    color: #FFF;
+    
+}
+
+DIV:hover::before {
+        transition: 3s;
+        background: red;
+}
+
+@keyframes timing {
+    50%{
+      left: 100%;
+      margin-left: -5.6em;
+    }
+}
+
+.linear:before {
+    animation-timing-function: linear;
+}
+

@@ -13,7 +13,7 @@ class Building {
             `Elevator: ${this.hasElevator}`,
             `Arc reactor capacity: ${this.arcCapacity}`,
             `Height: ${this.height}`,
-            `Floor height: ${this.height/this.floors}`,
+            `Floor height: ${this.getFloorHeight()}`,
         ].join('\n');
     }
 }
@@ -36,6 +36,10 @@ class Tower extends Building {
         else if (value == false) {
             this.help1 = '-';
         }
+    }
+
+    getFloorHeight () {
+        return this.height/this.floors;
     }
 }
 

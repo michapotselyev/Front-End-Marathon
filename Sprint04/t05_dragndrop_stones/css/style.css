@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#page {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.stone {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    transform: rotate(45deg);
+    background-color: pink;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+  
+.stone[value="off"] { 
+   border: 2px dashed black; 
+}
+
+#red {
+    float: left;
+    left: 2%;
+    top: 2%;
+    background-color: #D21F3C;
+}
+#green {
+    float: left;
+    left: 5%;
+    top: 9%;
+    background-color: rgb(61, 145, 61);
+}
+#blue {
+    left: 8%;
+    top: 16%;
+    background-color: rgb(80, 80, 213);
+}
+#yellow {
+    left: 11%;
+    top: 23%;
+    background-color: rgb(240, 240, 104);
+}
+#pink {
+    left: 14%;
+    top: 30%;
+    background-color: rgb(252, 78, 107);
+}
+#purple {
+    left: 17%;
+    top: 37%;
+    background-color: rgb(97, 31, 97);
+}
+

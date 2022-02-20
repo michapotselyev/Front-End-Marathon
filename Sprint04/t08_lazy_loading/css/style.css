@@ -1,0 +1,37 @@
+.wrapper {
+    width: 700px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.wrapper h1 {
+    width: 100%;
+    text-align: center;
+}
+.lazy-image {
+    width: 640px;
+    height: 480px;
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    transition: opacity 250ms ease-in;
+}
+.message {
+    position: fixed;
+    top:20px;
+    right: 100px;
+    border: 1px solid grey;
+    padding: 10px 30px;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+}
+.message_done {
+    background-color: green;
+}
+.message_out {
+    top: -50px;
+    transition: 1s;
+}

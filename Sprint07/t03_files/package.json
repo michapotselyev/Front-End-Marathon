@@ -1,0 +1,26 @@
+{
+  "name": "mpotseluie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "express-thymeleaf": "^0.3.0",
+    "thymeleaf": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.22"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ucode.world:connect-khpi/connect-fullstack-sprint07/mpotseluie.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
+

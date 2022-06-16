@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Card Game</title>
+        <meta charset="utf-8">
+        style
+            include ../styles/stylereg.css
+        <script type="text/javascript" src="server.js" defer></script>
+    </head>
+    <body>
+        <div class="body">
+        </div>
+        <div class="grad">
+        </div>
+        <div class="header">
+            <div class = "card">Gachi<span>Fight</span>
+            </div>
+            <div class = "reg">Register  <span>NOW</span>
+            </div>
+        </div>
+        <br>
+        <div class="login">
+            p(class = "err")= message
+            <form method = "post" action = "/" autocomplete="off">
+                <input id = "login" name = "login" type = "text" placeholder="login" autofocus>
+                <input id = "password" name = "password" type = "password" placeholder="password">
+                <input id = "repeatpass" name = "repeatpass" type = "password" placeholder="Repeat password">
+                <input type = "submit" id="submit" value = 'Sign Up'>
+            </form>
+            <form method = "get" action = "/login">
+                <h4>Already have an account? Sign IN below</h4>
+                <input type = "submit" id="submit" value = 'Sign In'>
+            </form>
+        </div>    
+
+
+    </body> 
+</html>

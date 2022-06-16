@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title thjs:text="${title}"></title>
+</head>
+<body>
+    <h1>Anonymous</h1>
+    <p id="name">Name: <span thjs:text="${dateUser.name}"></span></p>
+    <p id="alias">Alias: <span thjs:text="${dateUser.alias}"></span></p>
+    <p id="age">Age: <span thjs:text="${dateUser.age}"></span></p>
+    <p id="description">Description: <span thjs:text="${dateUser.description}"></span> </p>
+    <p id="photo">Photo: <span thjs:text="${dateUser.photo}"></span></p>
+    <p id="experience">Expirience: <span thjs:text="${dateUser.experience}"></span> </p>
+    <p id="level">Level: <span thjs:text="${dateUser.level}"></span></p>
+    <p id="purpose">Purpose: <span thjs:text="${dateUser.purpose}"></span></p>
+    <fieldset>
+		<form action="date" method="post">
+			<button>FORGET</button>
+		</form>
+    </fieldset>
+</body>
+</html>
+

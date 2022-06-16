@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Cookie counter</h1>
+	<form action="/api">
+		<p id="views-count"></p>
+	</form>
+	<script>
+		let data = 0;
+		window.onload = anonymous = async () => {
+			const response = await fetch('/views-count');
+			const dataCurr = await response.json();
+			console.log(dataCurr);
+			if (dataCurr.count != data)
+			{
+				data = dataCurr;
+				document.getElementById('views-count').innerText = `This page was loaded ${dataCurr.views} time(s) in last minutes.`;
+			}
+			setTimeout(() => {
+				anonymous();
+			}, 5000);
+		};
+	</script>
+</body>
+</html>
+
